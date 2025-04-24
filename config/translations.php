@@ -6,7 +6,6 @@ return [
     'scan' => [
         'paths' => [
             base_path(),
-            resource_path('views'),
         ],
 
         'extensions' => [
