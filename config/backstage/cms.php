@@ -9,10 +9,12 @@ return [
 
         'plugins' => [
             Backstage\Redirects\Filament\RedirectsPlugin::make(),
+
             MediaPlugin::make(),
+
             TranslationsPlugin::make()
-                ->canManageTranslations(false)
-                ->languageSwitcherDisabled(),
+                ->languageSwitcherDisabled()
+                ->canManageTranslations(true),
         ],
 
         'resources' => [

@@ -78,12 +78,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:backstagephp/core.git",
-                "reference": "ac68e18e0f35874adbb51ff0a67185422654970f"
+                "reference": "ca9e6800f1ad9874f55297cfb6ec7ba622b681fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/backstagephp/core/zipball/ac68e18e0f35874adbb51ff0a67185422654970f",
-                "reference": "ac68e18e0f35874adbb51ff0a67185422654970f",
+                "url": "https://api.github.com/repos/backstagephp/core/zipball/ca9e6800f1ad9874f55297cfb6ec7ba622b681fd",
+                "reference": "ca9e6800f1ad9874f55297cfb6ec7ba622b681fd",
                 "shasum": ""
             },
             "require": {
@@ -198,7 +198,7 @@
                     "url": "https://github.com/vormkracht10"
                 }
             ],
-            "time": "2025-04-22T11:04:36+00:00"
+            "time": "2025-04-28T11:03:01+00:00"
         },
         {
             "name": "backstage/fields",
@@ -599,20 +599,20 @@
         },
         {
             "name": "backstage/laravel-translations",
-            "version": "v0.2.7",
+            "version": "v0.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/backstagephp/laravel-translations.git",
-                "reference": "e927012add69deea7cf7b6cc6e6ee63bbf1ed31c"
+                "reference": "335aae7b21acd333455ec8fa3f8b7092a51676ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/backstagephp/laravel-translations/zipball/e927012add69deea7cf7b6cc6e6ee63bbf1ed31c",
-                "reference": "e927012add69deea7cf7b6cc6e6ee63bbf1ed31c",
+                "url": "https://api.github.com/repos/backstagephp/laravel-translations/zipball/335aae7b21acd333455ec8fa3f8b7092a51676ca",
+                "reference": "335aae7b21acd333455ec8fa3f8b7092a51676ca",
                 "shasum": ""
             },
             "require": {
-                "echolabsdev/prism": "^0.37.0",
+                "echolabsdev/prism": ">=0.65.1",
                 "illuminate/contracts": "^10.0||^11.0",
                 "php": "^8.2",
                 "spatie/laravel-package-tools": "^1.16",
@@ -672,7 +672,7 @@
             ],
             "support": {
                 "issues": "https://github.com/backstagephp/laravel-translations/issues",
-                "source": "https://github.com/backstagephp/laravel-translations/tree/v0.2.7"
+                "source": "https://github.com/backstagephp/laravel-translations/tree/v0.2.8"
             },
             "funding": [
                 {
@@ -680,7 +680,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-03-20T10:57:53+00:00"
+            "time": "2025-04-28T12:04:51+00:00"
         },
         {
             "name": "backstage/media",
@@ -883,20 +883,20 @@
         },
         {
             "name": "backstage/translations",
-            "version": "v0.2.38",
+            "version": "v0.2.39",
             "source": {
                 "type": "git",
                 "url": "https://github.com/backstagephp/translations.git",
-                "reference": "6b439ab6048a341dc18136e07585a7a93d979c89"
+                "reference": "c33e4489e8305b87e3399278f553f6cfc46cc447"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/backstagephp/translations/zipball/6b439ab6048a341dc18136e07585a7a93d979c89",
-                "reference": "6b439ab6048a341dc18136e07585a7a93d979c89",
+                "url": "https://api.github.com/repos/backstagephp/translations/zipball/c33e4489e8305b87e3399278f553f6cfc46cc447",
+                "reference": "c33e4489e8305b87e3399278f553f6cfc46cc447",
                 "shasum": ""
             },
             "require": {
-                "backstage/laravel-translations": "^0.2.5",
+                "backstage/laravel-translations": "^0.2.8",
                 "filament/filament": "^3.2",
                 "php": "^8.2",
                 "ryangjchandler/filament-progress-column": "^1.0",
@@ -965,7 +965,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-04-23T11:26:42+00:00"
+            "time": "2025-04-28T12:16:01+00:00"
         },
         {
             "name": "backstage/uploadcare-field",
@@ -2082,27 +2082,26 @@
         },
         {
             "name": "echolabsdev/prism",
-            "version": "v0.37.0",
+            "version": "v0.65.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/prism-php/prism.git",
-                "reference": "79bc61f4ab3c0d080775ea77870c899df3e90ab2"
+                "reference": "c4a6a0af6a11f23869b71d0785cdacb1f6f9670a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prism-php/prism/zipball/79bc61f4ab3c0d080775ea77870c899df3e90ab2",
-                "reference": "79bc61f4ab3c0d080775ea77870c899df3e90ab2",
+                "url": "https://api.github.com/repos/prism-php/prism/zipball/c4a6a0af6a11f23869b71d0785cdacb1f6f9670a",
+                "reference": "c4a6a0af6a11f23869b71d0785cdacb1f6f9670a",
                 "shasum": ""
             },
             "require": {
-                "laravel/framework": "^11.0",
-                "php": "^8.3"
+                "laravel/framework": "^11.0|^12.0",
+                "php": "^8.2"
             },
             "require-dev": {
                 "laravel/pint": "^1.14",
                 "mockery/mockery": "^1.6",
                 "orchestra/testbench": "^9.4",
-                "peckphp/peck": "^0.1.1",
                 "pestphp/pest": "^3.0",
                 "pestphp/pest-plugin-arch": "^3.0",
                 "pestphp/pest-plugin-laravel": "^3.0",
@@ -2112,22 +2111,26 @@
                 "phpstan/phpstan-deprecation-rules": "^1.2",
                 "projektgopher/whisky": "^0.7.0",
                 "rector/rector": "^1.1",
+                "spatie/laravel-ray": "^1.39",
                 "symplify/rule-doc-generator-contracts": "^11.2"
             },
             "type": "library",
             "extra": {
                 "laravel": {
                     "aliases": {
-                        "PrismServer": "EchoLabs\\Prism\\Facades\\PrismServer"
+                        "PrismServer": "Prism\\Prism\\Facades\\PrismServer"
                     },
                     "providers": [
-                        "EchoLabs\\Prism\\PrismServiceProvider"
+                        "Prism\\Prism\\PrismServiceProvider"
                     ]
                 }
             },
             "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
                 "psr-4": {
-                    "EchoLabs\\Prism\\": "src/"
+                    "Prism\\Prism\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2143,7 +2146,7 @@
             "description": "A powerful Laravel package for integrating Large Language Models (LLMs) into your applications.",
             "support": {
                 "issues": "https://github.com/prism-php/prism/issues",
-                "source": "https://github.com/prism-php/prism/tree/v0.37.0"
+                "source": "https://github.com/prism-php/prism/tree/v0.65.1"
             },
             "funding": [
                 {
@@ -2151,7 +2154,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-02-14T18:48:00+00:00"
+            "time": "2025-04-27T15:05:56+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -3338,16 +3341,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v11.44.5",
+            "version": "v11.44.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "819555ccc7e88ea92945ea785ef9f0fa9b6d4931"
+                "reference": "00bc6ac91a6d577bf051c18ddaa638c0d221e1c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/819555ccc7e88ea92945ea785ef9f0fa9b6d4931",
-                "reference": "819555ccc7e88ea92945ea785ef9f0fa9b6d4931",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/00bc6ac91a6d577bf051c18ddaa638c0d221e1c7",
+                "reference": "00bc6ac91a6d577bf051c18ddaa638c0d221e1c7",
                 "shasum": ""
             },
             "require": {
@@ -3549,7 +3552,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2025-04-24T13:59:11+00:00"
+            "time": "2025-04-25T12:40:47+00:00"
         },
         {
             "name": "laravel/prompts",
