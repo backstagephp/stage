@@ -11,8 +11,8 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
-        "backstage/cms": "dev-release/filament-v4",
-        "backstage/uploadcare-field": "dev-main",
+        "backstage/cms": "^0",
+        "backstage/uploadcare-field": "^1",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.9"
     },
@@ -41,7 +41,6 @@
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi",
-            "@php artisan filament:upgrade",
             "@php artisan backstage:upgrade"
         ],
         "post-update-cmd": [
@@ -71,14 +70,6 @@
         }
     },
     "repositories": {
-        "saade/filament-adjacency-list": {
-            "type": "git",
-            "url": "git@github.com:backstagephp/filament-adjacency-list.git"
-        },
-        "backstage/media": {
-            "type": "vcs",
-            "url": "git@github.com:backstagephp/media.git"
-        },
         "backstage/fields": {
             "type": "vcs",
             "url": "git@github.com:backstagephp/fields.git"
@@ -98,10 +89,6 @@
         "backstage/uploadcare-field": {
             "type": "vcs",
             "url": "git@github.com:backstagephp/uploadcare-field.git"
-        },
-        "vormkracht10/filament-uploadcare-field": {
-            "type": "vcs",
-            "url": "git@github.com:vormkracht10/filament-uploadcare-field.git"
         }
     },
     "minimum-stability": "dev",
