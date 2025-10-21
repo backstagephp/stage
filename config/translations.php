@@ -1,5 +1,6 @@
 <?php
 
+use DeepL\TranslatorOptions;
 use Prism\Prism\Enums\Provider;
 
 return [
@@ -27,6 +28,14 @@ return [
         ],
     ],
 
+    'use_permanent_cache' => false,
+
+    'eloquent' => [
+        'translatable-models' => [
+            //
+        ],
+    ],
+
     'translators' => [
         'default' => env('TRANSLATION_DRIVER', 'google-translate'),
 
@@ -37,8 +46,14 @@ return [
 
             'ai' => [
                 'provider' => Provider::OpenAI,
-                'model' => 'text-davinci-003',
-                'system_prompt' => 'You are an expert mathematician who explains concepts simply. The only thing you do it output what i ask. No comments, no extra information. Just the answer.',
+                'model' => 'gpt-4.1',
+                'system_prompt' => 'You translate Laravel translations strings to the language you have been asked.',
+            ],
+
+            'deep-l' => [
+                'options' => [
+                    TranslatorOptions::SERVER_URL => env('DEEPL_SERVER_URL', 'https://api.deepl.com/'),
+                ],
             ],
         ],
     ],

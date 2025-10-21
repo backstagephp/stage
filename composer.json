@@ -1,5 +1,5 @@
 {
-    "name": "backstage/stage",
+    "name": "vormkracht10/ux.nl",
     "type": "project",
     "description": "Site template for Backstage CMS build with Laravel and Filament",
     "keywords": [
@@ -11,7 +11,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
-        "backstage/cms": "^0",
+        "backstage/cms": "@dev",
         "backstage/uploadcare-field": "^1",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.9"
@@ -70,13 +70,16 @@
         }
     },
     "repositories": {
+        "cms": {
+            "type": "path",
+            "url": "/var/www/core",
+            "options": {
+                "symlink": true
+            }
+        },
         "backstage/fields": {
             "type": "vcs",
             "url": "git@github.com:backstagephp/fields.git"
-        },
-        "backstage/cms": {
-            "type": "vcs",
-            "url": "git@github.com:backstagephp/core.git"
         },
         "backstage/laravel-redirects": {
             "type": "vcs",

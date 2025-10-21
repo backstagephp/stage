@@ -1,55 +1,34 @@
 <?php
 
-use Backstage\Models\Content;
 use Backstage\Models\Site;
 use Backstage\Models\User;
+use Backstage\Models\Media;
+
+use Backstage\Media\Resources\MediaResource;
 
 return [
-    /*
-    |--------------------------------------------------------------------------
-    | File upload
-    |--------------------------------------------------------------------------
-    |
-    */
     'accepted_file_types' => [
         'image/jpeg',
         'image/png',
         'image/webp',
         'image/svg+xml',
+        'video/mp4',
+        'video/webm',
+        'audio/mpeg',
+        'audio/ogg',
         'application/pdf',
     ],
-
     'directory' => 'media',
-
-    'disk' => env('FILAMENT_FILESYSTEM_DISK', 'public'),
-
+    'disk' => 'public',
     'should_preserve_filenames' => false,
-
     'should_register_navigation' => true,
-
     'visibility' => 'public',
-
-    /*
-    |--------------------------------------------------------------------------
-    | Tenancy
-    |--------------------------------------------------------------------------
-    |
-    */
     'is_tenant_aware' => true,
     'tenant_ownership_relationship_name' => 'site',
     'tenant_relationship' => 'site',
     'tenant_model' => Site::class,
-
-    /*
-    |--------------------------------------------------------------------------
-    | Model and resource
-    |--------------------------------------------------------------------------
-    |
-    */
-    'model' => \Backstage\Media\Models\Media::class,
-
+    'model' => Media::class,
     'user_model' => User::class,
-
     'resources' => [
         'label' => 'Media',
         'plural_label' => 'Media',
@@ -58,12 +37,6 @@ return [
         'navigation_icon' => 'heroicon-o-photo',
         'navigation_sort' => null,
         'navigation_count_badge' => false,
-        'resource' => \Backstage\Media\Resources\MediaResource::class,
-    ],
-
-    'file_upload' => [
-        'models' => [
-            Content::class,
-        ],
+        'resource' => MediaResource::class,
     ],
 ];

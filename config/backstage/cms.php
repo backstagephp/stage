@@ -8,13 +8,8 @@ return [
         'default' => true,
 
         'plugins' => [
-            Backstage\Redirects\Filament\RedirectsPlugin::make(),
-
             MediaPlugin::make(),
-
-            TranslationsPlugin::make()
-                ->languageSwitcherDisabled()
-                ->canManageTranslations(true),
+            TranslationsPlugin::make(),
         ],
 
         'resources' => [

@@ -1,24 +1,22 @@
 <?php
 
+use Backstage\Models\Site;
+use Backstage\CustomFields\Builder;
+use Backstage\CustomFields\CheckboxList;
+use Backstage\CustomFields\Select;
+use Backstage\Resources\ContentResource;
 return [
-
     'tenancy' => [
         'is_tenant_aware' => false,
-
         'relationship' => 'tenant',
-
-        // 'model' => \App\Models\Tenant::class,
-
-        // The key (id, ulid, uuid) to use for the tenant relationship
         'key' => 'id',
     ],
-
     'custom_fields' => [
-        // App\Fields\CustomField::class,
+        Builder::class,
+        CheckboxList::class,
+        Select::class,
     ],
-
-    // When populating the select field, this will be used to build the relationship options.
     'selectable_resources' => [
-        // App\Filament\Resources\ContentResource::class,
+        ContentResource::class,
     ],
 ];
