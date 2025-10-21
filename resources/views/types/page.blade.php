@@ -5,7 +5,7 @@
     </x-slot>
 
     <h1>Betekenis van User Experience (UX)</h1>
-    {{ $content->field('body') }}
+    {!! $content->field('body') !!}
 
     <x-blocks field="blocks" />
     <x-blocks field="main" />
