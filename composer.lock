@@ -78,7 +78,7 @@
             "dist": {
                 "type": "path",
                 "url": "/var/www/core",
-                "reference": "20f5ecc4906dfcfffc0ae291b8443bdb62e69124"
+                "reference": "02d696548e3edb9573dc010631d7ca00f8feded8"
             },
             "require": {
                 "backstage/fields": "^0.8.0",
