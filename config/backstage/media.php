@@ -1,10 +1,9 @@
 <?php
 
+use Backstage\Media\Resources\MediaResource;
+use Backstage\Models\Media;
 use Backstage\Models\Site;
 use Backstage\Models\User;
-use Backstage\Models\Media;
-
-use Backstage\Media\Resources\MediaResource;
 
 return [
     'accepted_file_types' => [
