@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if vendor/bin/pest --compact --stop-on-failure >/dev/null 2>&1; then
+    printf "✅ Tests passed!\n"
+else
+    printf "❌ Tests failed. Fix the tests and try again.\n"
+fi
+
+exit 0
