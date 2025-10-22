@@ -68,7 +68,7 @@
         }
     },
     "repositories": {
-        "backstage/cms": {
+        "backstage": {
             "type": "vcs",
             "url": "git@github.com:backstagephp/core.git"
         },
