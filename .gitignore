@@ -3,7 +3,7 @@
 .env.production
 .phpactor.json
 .phpunit.result.cache
-/.DS_Store
+.DS_Store
 /.fleet
 /.idea
 /.nova
