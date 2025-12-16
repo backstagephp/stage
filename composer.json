@@ -10,8 +10,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.3",
-        "backstage/cms": "^0.5",
-        "backstage/uploadcare-field": "^1.0",
+        "backstage/cms": "^1.0",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.9"
     },
@@ -70,25 +69,9 @@
         }
     },
     "repositories": {
-        "backstage/cms": {
-            "type": "vcs",
-            "url": "git@github.com:backstagephp/core.git"
-        },
-        "backstage/fields": {
-            "type": "vcs",
-            "url": "git@github.com:backstagephp/fields.git"
-        },
-        "backstage/laravel-redirects": {
-            "type": "vcs",
-            "url": "git@github.com:backstagephp/laravel-redirects.git"
-        },
-        "backstage/redirects": {
-            "type": "vcs",
-            "url": "git@github.com:backstagephp/redirects.git"
-        },
-        "backstage/uploadcare-field": {
-            "type": "vcs",
-            "url": "git@github.com:backstagephp/uploadcare-field.git"
+        "backstage": {
+            "type": "composer",
+            "url": "https://satis.backstagephp.com"
         }
     },
     "minimum-stability": "dev",

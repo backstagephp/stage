@@ -1,7 +1,6 @@
 <?php
 
 use Backstage\Media\MediaPlugin;
-use Backstage\Translations\Filament\TranslationsPlugin;
 
 return [
     'panel' => [
@@ -9,7 +8,6 @@ return [
 
         'plugins' => [
             MediaPlugin::make(),
-            TranslationsPlugin::make(),
         ],
 
         'resources' => [
@@ -28,8 +26,6 @@ return [
             // Backstage\Resources\TemplateResource::class,
             Backstage\Resources\TypeResource::class,
             Backstage\Resources\UserResource::class,
-
-            Backstage\Translations\Filament\Resources\TranslationResource::class,
         ],
 
         'widgets' => [
