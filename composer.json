@@ -1,5 +1,5 @@
 {
-    "name": "Stage",
+    "name": "backstage/stage",
     "description": "Laravel application powered by Backstage CMS",
     "type": "project",
     "keywords": [
