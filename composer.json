@@ -1,11 +1,12 @@
 {
-    "name": "vormkracht10/ux.nl",
+    "name": "Stage",
+    "description": "Laravel application powered by Backstage CMS",
     "type": "project",
     "keywords": [
         "backstage",
-        "laravel",
         "cms",
-        "filament"
+        "filament",
+        "laravel"
     ],
     "license": "MIT",
     "require": {

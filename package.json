@@ -1,4 +1,6 @@
 {
+    "name": "Stage",
+    "description": "Laravel application powered by Backstage CMS",
     "private": true,
     "type": "module",
     "scripts": {

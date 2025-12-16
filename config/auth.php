@@ -64,11 +64,6 @@ return [
             'driver' => 'eloquent',
             'model' => env('AUTH_MODEL', \Backstage\Models\User::class),
         ],
-
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
     ],
 
     /*

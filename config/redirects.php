@@ -5,13 +5,8 @@ return [
      * The available status codes for redirection.
      */
     'status_codes' => [
-        // 300 => 'Multiple Choices',
         301 => 'Moved Permanently',
         302 => 'Found',
-        // 303 => 'See Other',
-        // 304 => 'Not Modified',
-        // 305 => 'Use Proxy',
-        // 306 => 'Unused',
         307 => 'Temporary Redirect',
         308 => 'Permanent Redirect',
     ],
@@ -47,9 +42,9 @@ return [
     */
     'trailing_slash' => env('REDIRECT_WITH_TRAILING_SLASH', false),
 
-    /**
+    /*
      * The middleware to use for redirecting.
-     * If you ad \Backstage\Redirects\Laravel\Http\Middleware\BackstageRedirects, the request will be looped endlessly.
+     * If you add \Backstage\Redirects\Laravel\Http\Middleware\BackstageRedirects, the request will be looped endlessly.
      */
     'middleware' => [
         Backstage\Redirects\Laravel\Http\Middleware\HttpRedirects::class,
