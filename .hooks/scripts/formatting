@@ -1,19 +1,18 @@
 #!/bin/sh
 
-CHANGED_FILES=$(git diff --cached --name-only --diff-filter=ACM | grep '\.php$')
+STAGED_FILES=$(git diff --cached --name-only --diff-filter=ACM | grep '\.php$')
 
-if [ -z "$CHANGED_FILES" ]; then
-    printf "ℹ️  Formatting not needed, no PHP files changed\n"
+if [ -z "$STAGED_FILES" ]; then
+    printf "ℹ️  Formatting not needed, no PHP files staged\n"
 
     exit 0
 fi
 
-if vendor/bin/pint >/dev/null 2>&1; then
+if vendor/bin/pint $STAGED_FILES >/dev/null 2>&1; then
     printf "✅ Formatting passed!\n"
 else
     printf "❌ Formatting failed. Fix the formatting and try again.\n"
+    exit 1
 fi
-
-git add .
 
 exit 0
